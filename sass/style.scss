@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
 
 * {
     box-sizing: border-box;
@@ -47,27 +50,68 @@ header {
     align-items: center;
     justify-content: center;
 
-    .slogan { 
-        text-align: center;        
+    .slogan {
+        text-align: center;
+
         h1 {
             color: #ed2024;
-            font-family: 'Indie Flower', cursive;
+font-family: 'Great Vibes', cursive;
             font-size: 80px;
             letter-spacing: 1px;
             text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
             margin: 0;
             padding: 20px;
         }
+
         h6 {
             text-transform: uppercase;
             color: white;
             font-size: 25px;
             letter-spacing: 4px;
         }
-    
     }
+}
 
- 
+/*#endregion */
+/*#region reservation */
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    h3 {
+        color: #f01b16;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 1.74px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0;
+        span {
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+    }
+    div {
+        padding-bottom: 20px;
+        max-width: 850px;
+        flex-wrap: wrap;
+        text-align: center;
+        color: #9f9a97;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 30px 20px;
+        background-color: #ff7e66;
+        color: #ffffff;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;    
+    }
 }
 
 /*#endregion */
