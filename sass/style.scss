@@ -145,6 +145,7 @@ header {
         padding: 70px 0px;
         background-color: #fff2ed;
         justify-content: center;
+
         h3 {
             max-width: 364px;
             color: #ff7e66;
@@ -152,12 +153,13 @@ header {
             font-size: 45px;
             text-transform: uppercase;
             letter-spacing: 3px;
-            margin: 0;     
+            margin: 0;
         }
+
         img {
             margin: 40px;
         }
-        
+
         div {
             width: 536px;
             height: 127px;
@@ -214,4 +216,94 @@ header {
         cursor: pointer;
     }
 }
+
 /*#endregion */
+
+/*#region baking */
+.cake {
+    background-color: lightblue;
+    background-image: url("../images/cake.png");
+    background-position: center;
+    background-size: cover;
+    height: 763px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .cake-slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 20%;
+
+        h1 {
+            color: #ed2024;
+            font-family: 'Great Vibes', cursive;
+            font-size: 80px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
+            margin: 0;
+            max-width: 400px;
+        }
+
+        div {
+            width: 497px;
+            height: 62px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        h6 {
+            letter-spacing: 4px;
+            width: 152px;
+            height: 48px;
+            color: #ffffff;
+            font-size: 50px;
+            margin: 50px 0;
+            font-weight: 400;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: rgba($color: #ffffff, $alpha: 0);
+        }
+    }
+}
+
+/*#endregion */
+
+/*#region services */
+
+.services {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+
+
+    .service-container {
+        margin: 20px 50px;
+        text-transform: capitalize;
+
+        .img-container {
+            height: 90px;
+            margin: 20px;
+        }
+
+        span {
+            margin: 20px;
+        }
+    }
+
+    .separator {
+        background-color: black;
+        height: 100px;
+        width: 2px;
+        margin: 40px 50px;
+    }
+}

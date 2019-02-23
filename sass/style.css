@@ -211,3 +211,88 @@ header .menu ul li:hover {
 }
 
 /*#endregion */
+/*#region baking */
+.cake {
+  background-color: lightblue;
+  background-image: url("../images/cake.png");
+  background-position: center;
+  background-size: cover;
+  height: 763px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cake .cake-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20%;
+}
+
+.cake .cake-slogan h1 {
+  color: #ed2024;
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
+  margin: 0;
+  max-width: 400px;
+}
+
+.cake .cake-slogan div {
+  width: 497px;
+  height: 62px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cake .cake-slogan h6 {
+  letter-spacing: 4px;
+  width: 152px;
+  height: 48px;
+  color: #ffffff;
+  font-size: 50px;
+  margin: 50px 0;
+  font-weight: 400;
+}
+
+.cake .cake-slogan button {
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/*#endregion */
+/*#region services */
+.services {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.services .service-container {
+  margin: 20px 50px;
+  text-transform: capitalize;
+}
+
+.services .service-container .img-container {
+  height: 90px;
+  margin: 20px;
+}
+
+.services .service-container span {
+  margin: 20px;
+}
+
+.services .separator {
+  background-color: black;
+  height: 100px;
+  width: 2px;
+  margin: 40px 50px;
+}
