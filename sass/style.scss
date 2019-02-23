@@ -1,6 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 * {
     box-sizing: border-box;
@@ -19,21 +18,56 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     .menu ul {
         list-style: none;
         display: flex;
         flex-direction: row;
+
         li {
             padding: 20px 25px;
-            font-size: 20px;   
+            font-size: 20px;
             text-transform: uppercase;
             font-weight: bold;
+
             &:hover {
                 color: yellow;
-            }      
+            }
         }
     }
 }
 
 /*#endregion */
 
+/*#region jumbotron */
+.jumbotron {
+    background-color: lightblue;
+    height: 763px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slogan { 
+        text-align: center;        
+        h1 {
+            color: #ed2024;
+            font-family: 'Indie Flower', cursive;
+            font-size: 80px;
+            letter-spacing: 1px;
+            text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h6 {
+            text-transform: uppercase;
+            color: white;
+            font-size: 25px;
+            letter-spacing: 4px;
+        }
+    
+    }
+
+ 
+}
+
+/*#endregion */
