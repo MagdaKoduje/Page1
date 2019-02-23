@@ -166,3 +166,48 @@ header .menu ul li:hover {
 }
 
 /*#endregion */
+/*#region baking */
+.baking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 20px;
+}
+
+.baking h3 {
+  color: #f01b16;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1.74px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.baking h3 span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.baking div {
+  padding-bottom: 20px;
+  max-width: 800px;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #9f9a97;
+}
+
+.baking button {
+  padding: 10px 20px;
+  margin: 30px 20px;
+  background-color: #ff7e66;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/*#endregion */
