@@ -381,3 +381,113 @@ header .menu ul li:hover {
 }
 
 /*#endregion */
+/*#region blog */
+.blog .blog-description {
+  margin: 20px;
+  text-align: center;
+}
+
+.blog .blog-description h3 {
+  color: #f01b16;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.blog .blog-description h3 span {
+  font-family: 'Great Vibes', cursive;
+}
+
+.blog .blog-description div {
+  color: #9f9a97;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.blog .meal {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.blog .meal > div {
+  margin: 0 20px;
+  width: 200px;
+}
+
+.blog .meal > div:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.blog .meal > div:hover button {
+  display: inline;
+}
+
+.blog .meal > div div {
+  background-color: #ffffff;
+  border-radius: 0 0 50% 50%;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.blog .meal > div div h5 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40.1px;
+  text-transform: uppercase;
+}
+
+.blog .meal > div div span {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Great Vibes', cursive;
+  color: #f01b16;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.blog .meal > div div button {
+  display: none;
+  background-color: #ff7e66;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.blog .meal > div div button:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.blog .meal .rolls {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/rolls.png");
+}
+
+.blog .meal .sandwich {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/sandwich.png");
+}
+
+.blog .meal .breakfast {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/breakfast.png");
+}
+
+.blog .meal .pizza {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/pizza.png");
+}
+
+/*#endregion */

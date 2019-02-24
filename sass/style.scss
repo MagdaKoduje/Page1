@@ -9,7 +9,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-@mixin image ($url){
+@mixin image($url) {
     background-position: center;
     background-size: cover;
     background-image: url($url);
@@ -317,13 +317,17 @@ header {
 
 .gallery {
     margin: 30px 0;
+
     .gallery-top {
         display: flex;
         height: 350px;
+
         .coffee {
-            @include image ("../images/coffee.png");
+            @include image("../images/coffee.png");
+
             flex-basis: 25%;
         }
+
         .title-image {
             flex-basis: 25%;
             color: #ff7e66;
@@ -335,35 +339,41 @@ header {
             align-items: center;
             font-weight: bold;
             letter-spacing: 10px;
-
-
         }
+
         .cake-1 {
             flex-basis: 50%;
-            @include image ("../images/cake-1.png");
-            }
+
+            @include image("../images/cake-1.png");
+        }
     }
 
     .gallery-bottom {
         height: 350px;
         display: flex;
-        
+
         .cookies {
             flex-basis: 50%;
-            @include image ("../images/cookies.png");
+
+            @include image("../images/cookies.png");
         }
+
         .croissant {
             flex-basis: 25%;
-            @include image ("../images/croissant.png");
-            padding:40px;
+
+            @include image("../images/croissant.png");
+
+            padding: 40px;
             display: flex;
             align-items: stretch;
             justify-content: center;
+
             div {
                 background-color: rgba($color: #f01b16, $alpha: 0.7);
                 width: 100%;
                 display: flex;
                 align-items: center;
+
                 span {
                     text-transform: uppercase;
                     color: #ffffff;
@@ -374,13 +384,119 @@ header {
                 }
             }
         }
+
         .burger {
             flex-basis: 25%;
-            @include image ("../images/burger.png");
+
+            @include image("../images/burger.png");
         }
     }
 }
 
+/*#endregion */
 
+/*#region blog */
+
+.blog {
+    .blog-description {
+        margin: 20px;
+        text-align: center;
+
+        h3 {
+            color: #f01b16;
+            font-size: 40px;
+            text-transform: capitalize;
+            font-weight: bold;
+
+            span {
+                font-family: 'Great Vibes', cursive;
+            }
+        }
+
+        div {
+            color: #9f9a97;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    }
+
+    .meal {
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px 0;
+
+        & > div {
+            margin: 0 20px;
+            width: 200px;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 1s;
+
+                button {
+                    display: inline;
+                }
+            }
+
+            div {
+                background-color: #ffffff;
+                border-radius: 0 0 50% 50%;
+                padding: 25px 0;
+                text-align: center;
+
+                h5 {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 40.1px;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-family: 'Great Vibes', cursive;
+                    color: #f01b16;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                button {
+                    display: none;
+                    background-color: #ff7e66;
+                    border: none;
+                    border-radius: 2px;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 7px 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.5;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+
+        .rolls {
+            @include image("../images/rolls.png");
+        }
+
+        .sandwich {
+            @include image("../images/sandwich.png");
+        }
+
+        .breakfast {
+            @include image("../images/breakfast.png");
+        }
+
+        .pizza {
+            @include image("../images/pizza.png");
+        }
+    }
+}
 
 /*#endregion */
