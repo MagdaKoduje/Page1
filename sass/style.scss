@@ -445,7 +445,7 @@ header {
                 border-radius: 0 0 50% 50%;
                 padding: 25px 0;
                 text-align: center;
-                box-shadow: 0px 5px  rgba(0,0,0,0.1);
+                box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
 
                 h5 {
                     margin: 0;
@@ -474,7 +474,6 @@ header {
                     padding: 7px 15px;
                     cursor: pointer;
 
-
                     &:hover {
                         opacity: 0.5;
                         transition: 0.5s;
@@ -501,4 +500,48 @@ header {
     }
 }
 
+/*#endregion */
+
+/*#region contact */
+
+.contact {
+    margin: 100px 0;
+    @include image("../images/contact-image.png");
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &> div {
+            width: 1100px;
+            max-width: 1200px;
+        }
+        div:first-child {
+            display: flex;
+            justify-content: space-between;
+            input {
+                padding: 10px 40px;
+                text-align: left;
+                
+            }
+        }            
+        
+        div:nth-child(2) {
+            margin: 30px 0;
+            textarea {
+                width: 100%;
+                padding: 30px 50px;
+            }
+        }
+        div:last-child {
+            input {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }    
+}
 /*#endregion */

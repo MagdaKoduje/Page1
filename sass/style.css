@@ -492,3 +492,51 @@ header .menu ul li:hover {
 }
 
 /*#endregion */
+/*#region contact */
+.contact {
+  margin: 100px 0;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/contact-image.png");
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form > div {
+  width: 1100px;
+  max-width: 1200px;
+}
+
+.contact form div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact form div:first-child input {
+  padding: 10px 40px;
+  text-align: left;
+}
+
+.contact form div:nth-child(2) {
+  margin: 30px 0;
+}
+
+.contact form div:nth-child(2) textarea {
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.contact form div:last-child input {
+  width: 100%;
+  padding: 10px;
+}
+
+/*#endregion */
