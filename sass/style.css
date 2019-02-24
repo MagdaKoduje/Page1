@@ -296,3 +296,88 @@ header .menu ul li:hover {
   width: 2px;
   margin: 40px 50px;
 }
+
+/*#region gallery */
+.gallery {
+  margin: 30px 0;
+}
+
+.gallery .gallery-top {
+  display: flex;
+  height: 350px;
+}
+
+.gallery .gallery-top .coffee {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/coffee.png");
+  flex-basis: 25%;
+}
+
+.gallery .gallery-top .title-image {
+  flex-basis: 25%;
+  color: #ff7e66;
+  text-transform: uppercase;
+  background-color: #fff2ed;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.gallery .gallery-top .cake-1 {
+  flex-basis: 50%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/cake-1.png");
+}
+
+.gallery .gallery-bottom {
+  height: 350px;
+  display: flex;
+}
+
+.gallery .gallery-bottom .cookies {
+  flex-basis: 50%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/cookies.png");
+}
+
+.gallery .gallery-bottom .croissant {
+  flex-basis: 25%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/croissant.png");
+  padding: 40px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.gallery .gallery-bottom .croissant div {
+  background-color: rgba(240, 27, 22, 0.7);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.gallery .gallery-bottom .croissant div span {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.gallery .gallery-bottom .burger {
+  flex-basis: 25%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/burger.png");
+}
+
+/*#endregion */

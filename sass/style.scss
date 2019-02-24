@@ -9,6 +9,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@mixin image ($url){
+    background-position: center;
+    background-size: cover;
+    background-image: url($url);
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
@@ -283,8 +289,7 @@ header {
 .services {
     display: flex;
     justify-content: center;
-    text-align: center; 
-
+    text-align: center;
 
     .service-container {
         margin: 20px 50px;
@@ -307,3 +312,75 @@ header {
         margin: 40px 50px;
     }
 }
+
+/*#region gallery */
+
+.gallery {
+    margin: 30px 0;
+    .gallery-top {
+        display: flex;
+        height: 350px;
+        .coffee {
+            @include image ("../images/coffee.png");
+            flex-basis: 25%;
+        }
+        .title-image {
+            flex-basis: 25%;
+            color: #ff7e66;
+            text-transform: uppercase;
+            background-color: #fff2ed;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            letter-spacing: 10px;
+
+
+        }
+        .cake-1 {
+            flex-basis: 50%;
+            @include image ("../images/cake-1.png");
+            }
+    }
+
+    .gallery-bottom {
+        height: 350px;
+        display: flex;
+        
+        .cookies {
+            flex-basis: 50%;
+            @include image ("../images/cookies.png");
+        }
+        .croissant {
+            flex-basis: 25%;
+            @include image ("../images/croissant.png");
+            padding:40px;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            div {
+                background-color: rgba($color: #f01b16, $alpha: 0.7);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                span {
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    font-size: 60px;
+                    text-align: center;
+                }
+            }
+        }
+        .burger {
+            flex-basis: 25%;
+            @include image ("../images/burger.png");
+        }
+    }
+}
+
+
+
+/*#endregion */
